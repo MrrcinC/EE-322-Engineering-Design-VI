@@ -2,6 +2,7 @@
 
 
 **About Me**
+
 *I am a junior at Stevens Institute of Technology.* 
 
 *I will be graduating in 2026 with a degree in Electrical Engineering with a concentration in Power Engineering and a minor in Buisness Managment.*
@@ -14,7 +15,7 @@
 ---
 
 This list contains the activities I do during the summers:
-1. Work in the Metro Politition Area as an Electrition
+1. Work in the Metro Politition Area as an Electrician
 2. Play Soccer at a local Soccer league
 3. Hang out with friends and play card games
 
