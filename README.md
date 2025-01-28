@@ -23,4 +23,5 @@ This list contains all of my favorite activities to do when not focusing on Scho
 - Hanging out with freinds
 - Eating at good restaurants 
 
-![This image is me and my friends.]([C:\Users\marci\Pictures\IMG_0470.jpeg](https://github.com/MrrcinC/EE-322-Engineering-Design-VI/blob/main/IMG_0470.jpeg))
+![This image is me and my friends.](![IMG_0470](https://github.com/user-attachments/assets/5c159304-04e7-4660-92fc-8b9881448fc9)
+)
