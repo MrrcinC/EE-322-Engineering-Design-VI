@@ -1,6 +1,6 @@
 # EE-322-Engineering-Design-VI
 
-My Project Team Website[link](:https://sites.google.com/stevens.edu/cpe-322-group-project-site/home)
+My Project Team Website [link](:https://sites.google.com/stevens.edu/cpe-322-group-project-site/home)
 
 **About Me**
 
