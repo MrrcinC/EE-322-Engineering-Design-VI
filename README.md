@@ -24,5 +24,6 @@ This list contains all of my favorite activities to do when not focusing on Scho
 - Hanging out with freinds
 - Eating at good restaurants 
 
+This [link](https://github.com/MrrcinC/EE-322-Engineering-Design-VI) goes to my Github ReadMe.
 ![IMG_0470](https://github.com/user-attachments/assets/10ff8959-1892-476c-be89-18eac66217a3)
 
