@@ -1,22 +1,22 @@
-$ hostname // gives the name of the host computer running the commands, shows computer’s name
-$ env // gives some environment variables like current user and working directory, lists system settings
-$ ps // shows all processes running on the system, used over summer on VM to check background tasks, displays active tasks
-$ pwd // shows full path of current directory in terminal, prints folder path
-$ git clone // creates a copy of a GitHub repo on local machine, used often over summer for projects, copies repo
-$ cd iot // moves to iot directory, enters “iot” folder
-$ ls // shows all files and directories in current working directory, lists contents
-$ cd // moves to home directory (/~), goes to home folder
-$ df // displays filesystem info and available space, shows storage space
-$ mkdir demo // creates new directory 'demo' in current working directory, makes “demo” folder
-$ cd demo // moves into new directory, enters “demo” folder
-$ nano file // creates and edits 'file' with nano text editor, used over summer for quick edits, edits “file”
-$ cat file // prints contents of new file, shows “file” contents
-$ cp file file1 // copies 'file' to 'file1', duplicates “file”
-$ mv file file2 // renames 'file' to 'file2' and can move files, renames “file”
-$ rm file2 // deletes file2, removes “file2”
-$ clear // removes command and output history from terminal, clears terminal
-$ man uname // gives manual for 'uname' command with options, shows “uname” help
-$ uname -a // prints all system info with uname (-a means all), shows system details
-$ ifconfig // displays networking info like IP and MAC addresses, shows network details
-$ ping localhost // sends packets to local port for latency info, tests local network speed
-$ netstat // displays network connections and stats
+$ hostname        // gives the name of the host computer running the commands, shows computer’s name
+$ env             // gives some environment variables like current user and working directory, lists system settings
+$ ps              // shows all processes running on the system, used over summer on VM to check background tasks, displays active tasks
+$ pwd             // shows full path of current directory in terminal, prints folder path
+$ git clone       // creates a copy of a GitHub repo on local machine, used often over summer for projects, copies repo
+$ cd iot          // moves to iot directory, enters “iot” folder
+$ ls              // shows all files and directories in current working directory, lists contents
+$ cd              // moves to home directory (/~), goes to home folder
+$ df              // displays filesystem info and available space, shows storage space
+$ mkdir demo      // creates new directory 'demo' in current working directory, makes “demo” folder
+$ cd demo         // moves into new directory, enters “demo” folder
+$ nano file       // creates and edits 'file' with nano text editor, used over summer for quick edits, edits “file”
+$ cat file        // prints contents of new file, shows “file” contents
+$ cp file file1   // copies 'file' to 'file1', duplicates “file”
+$ mv file file2   // renames 'file' to 'file2' and can move files, renames “file”
+$ rm file2        // deletes file2, removes “file2”
+$ clear           // removes command and output history from terminal, clears terminal
+$ man uname       // gives manual for 'uname' command with options, shows “uname” help
+$ uname -a        // prints all system info with uname (-a means all), shows system details
+$ ifconfig        // displays networking info like IP and MAC addresses, shows network details
+$ ping localhost  // sends packets to local port for latency info, tests local network speed
+$ netstat         // displays network connections and stats
