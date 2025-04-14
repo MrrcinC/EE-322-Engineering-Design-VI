@@ -1,4 +1,4 @@
-# Lab 7 — ThingSpeak and Google Sheets
+#  Lab 7 — ThingSpeak and Google Sheets
 ## Part 1
 I ran thingspeak_cpu_loop.py and thingspeak_feed.py in a demo folder to collect and upload data about my cpu performance.
 ```console
