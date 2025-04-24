@@ -1,9 +1,8 @@
 ## Lab 1 — GHDL and GTKWave
 
 Windows Binaries of GHDL and GTKWave were downloaded and used for this demonstration.
-Please ensure that when running gtkwave to display the output from ghdl, you match the file path of the vcd files accurately.
-
 ### Half Adder
+ha.vhdl
 ```
 library ieee;
 use ieee.std_logic_1164.all;
@@ -23,7 +22,8 @@ begin
 	c <= a and b;
 end behave;
 ```
-'''
+va_tb.vhdl
+```
 library ieee; 
 use ieee.std_logic_1164.all;
 
@@ -73,14 +73,100 @@ begin
 	end process;
 	
 end test;
-'''
-
+```
 ![Image](https://github.com/user-attachments/assets/5d5ef5a1-5e65-4185-af51-344c2710800d)
 
 ### D Flip-Flop
+dff.vhdl
 ```
-ghdl -a dff.vhdl
-ghdl -a dff_tb.vhdl
-ghdl -e dff_tb
-ghdl -r dff_tb --vcd=dff.vcd
-gtkwave dff.vcd
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity DFF is
+port( din: in std_logic;
+clk: in std_logic;
+rst: in std_logic;
+dout: out std_logic);
+end DFF;
+
+architecture behavioral of DFF is
+begin
+process(rst,clk,din)
+begin
+if (rst='1') then
+dout<='0';
+elsif(rising_edge(clk)) then
+dout<= din;
+end if;
+end process;
+
+end behavioral;
+```
+dff_tb.vhdl
+```
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY DFF_tb IS
+END DFF_tb;
+
+ARCHITECTURE behavior OF DFF_tb IS 
+
+    COMPONENT DFF
+    PORT(
+         din : IN  std_logic;
+         clk : IN  std_logic;
+         rst : IN  std_logic;
+         dout : OUT  std_logic
+        ); 
+    END COMPONENT;
+    
+   signal din : std_logic := '0';
+   signal clk : std_logic := '0';
+   signal rst : std_logic := '1';
+   signal dout : std_logic;
+
+   constant clk_period : time := 10 ns;
+
+BEGIN
+
+ uut: DFF PORT MAP (
+          din => din,
+          clk => clk,
+          rst => rst,
+          dout => dout
+        );
+
+  clk_process :process
+  begin
+  clk <= '0';
+  wait for clk_period/2;
+  clk <= '1';
+  wait for clk_period/2;
+  if NOW > 200 ns then
+  wait;
+  end if;
+  end process;
+
+  stim_proc: process
+  begin  
+
+  rst <= '1';
+  wait for 50 ns; 
+
+  rst <= '0';
+  din <= '0';
+  wait for 50 ns;
+  
+  rst <= '0';
+  din <= '1';  
+  wait for 50 ns;
+
+  rst <= '1';
+  wait;
+
+  end process;
+
+END;
+```
+![Image](https://github.com/user-attachments/assets/3beb9288-07aa-4202-aa9d-6d3cff183765)
