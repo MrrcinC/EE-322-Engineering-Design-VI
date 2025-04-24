@@ -1,9 +1,9 @@
 # Lab 7 — ThingSpeak and Google Sheets
 ## Part 1
 I ran thingspeak_cpu_loop.py and thingspeak_feed.py in a demo folder to collect and upload data about my cpu performance.
-```console
+```
 PS C:\Users\marci\downloads\iot\lesson7> py thingspeak_feed.py
-An API key savefile was not found. Enter Write API Key >>> P56MOPYM5YMSAOMS
+An API key savefile was not found. Enter Write API Key >>> XXXXXXXXXXXX
 Should we save this key for future use? [y/N] >>> y
 8.2
 2361.6953125
@@ -37,7 +37,7 @@ Sun, 13 Apr 2025 21:38:15
 
 ## Part 2
 I installed gspread and oauth2client, and created a new Google Cloud Platform service account with a JSON key file, in order to use Google SHeets API calls. By prepping a new sheet and running cpu_spreadsheet.py, I was able to upload the data collected in Part 1 to Google Drive.
-```console
+```
 C:\Users\marci\iot\lesson7> py rpi_spreadsheet.py
 Free RAM: 16 (866)
 Number of processes: 178
