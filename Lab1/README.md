@@ -75,7 +75,7 @@ begin
 end test;
 '''
 
-![Image](https://github.com/user-attachments/assets/5d5ef5a1-5e65-4185-af51-344c2710800d.pnj)
+![Image](https://github.com/user-attachments/assets/5d5ef5a1-5e65-4185-af51-344c2710800d)
 
 ### D Flip-Flop
 ```
