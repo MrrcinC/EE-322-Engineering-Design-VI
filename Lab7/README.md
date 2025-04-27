@@ -34,7 +34,7 @@ Sun, 13 Apr 2025 21:37:15
 Sun, 13 Apr 2025 21:38:15
 200 OK
 ```
-
+![Image](https://github.com/user-attachments/assets/5d0f3fb1-ccc9-4d55-94c9-be7eca7e14c8)
 ## Part 2
 I installed gspread and oauth2client, and created a new Google Cloud Platform service account with a JSON key file, in order to use Google SHeets API calls. By prepping a new sheet and running cpu_spreadsheet.py, I was able to upload the data collected in Part 1 to Google Drive.
 ```
